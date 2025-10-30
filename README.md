@@ -1,6 +1,6 @@
-# 💼 Talent Flow — Next.js Application
+# 💼 Talent Flow — React.js Application
 
-This is a **Hiring Web Platform** built with **Next.js**.  
+This is a **Hiring Web Platform** built with **React.js**.  
 It uses **MirageJS** to simulate backend APIs, **IndexedDB** (via Dexie) for local data storage, and a modern UI powered by **TailwindCSS** and **Lucide React Icons**.
 
 ---
@@ -20,111 +20,120 @@ cd <project-folder>
 npm install
 # or
 yarn install
-# or
-pnpm install
-# or
-bun install
 ```
 
 ### 3. Run the development server
 ```bash
-npm run dev
+npm start
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn start
 ```
 
 ### 4. Open the app
 Once the server is running, open your browser and navigate to:
 
-👉 [http://localhost:3000](http://localhost:3000)
+👉 [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## 🧱 Architecture
 
-The architecture of the **Talent Flow** Next.js app is designed to be clean, modular, and easily extensible.
+The **Talent Flow React.js app** follows a clean and modular structure designed for scalability and clarity.
 
-- **Frontend Framework:** Built on **Next.js**, leveraging its file-based routing and React component-based architecture.  
-- **Styling:** Uses **TailwindCSS** for responsive and utility-first design.  
-- **Mock Backend:**  
-  - **MirageJS** is used to mock a real server environment.
-  - It seeds **user** and **job** data from JSON files into an in-memory database.
-  - These data are exposed through various REST-like API routes.
-- **State Management:** The **Context API** is used throughout the app for shared global state handling.
+### 🧩 Core Stack
+
+- **Frontend Framework:**  
+  Built with **React.js** using functional components and hooks for modularity and stateful behavior.
+
+- **Routing:**  
+  Implemented using **React Router DOM (v6)** for smooth client-side navigation.  
+  Routes are defined in a centralized `App.jsx` file and include:
+  - `/jobs`
+  - `/candidates`
+  - `/assessments`
+  - `/responses`
+  - `/notes`
+  - `/login`
+  - `/signup`
+  
+
+- **Styling:**  
+  Uses **TailwindCSS** for responsive, utility-first styling.  
+  Tailwind makes it easy to apply consistent design patterns directly within JSX.
+
+- **Mock Backend (MirageJS):**  
+  - **MirageJS** provides a full mock API server that intercepts fetch calls.  
+  - It seeds **user**, **job**, and **notes** data from local JSON files.  
+  - CRUD operations are simulated with in-memory persistence.  
+  - Mirage runs once during app initialization (in `index.js` or `App.jsx`).
+
+- **Local Storage (Dexie + IndexedDB):**  
+  - Data is stored locally using **IndexedDB** for offline support.  
+  - **Dexie.js** acts as a convenient wrapper to simplify IndexedDB queries and transactions.
+
+- **State Management:**  
+  Uses the **Context API** for global state sharing across pages.  
+  Components subscribe to global data (like selected job, logged-in user, or assessment state) without prop drilling.
+
 - **Icons & Notifications:**  
-  - **Lucide React Icons** for clean, lightweight icons.  
-  - **React Toastify** for elegant toast notifications.
-- **Storage Layer:**  
-  - Uses **IndexedDB** to store data directly in the browser.
-  - **Dexie.js** acts as a convenient wrapper to handle database operations.
-- **Routing & Structure:**  
-  - Next.js **file-based routing** is employed to define pages.
-  - Major logical API routes include:
-    - `/jobs`
-    - `/candidates`
-    - `/assessments`
-    - `/responses`
-    - `/notes`
-    - `/login` and `/signup`
-  - Each route handles its own responsibilities, mirroring typical backend endpoints.
+  - **Lucide React Icons** for lightweight, elegant icons.  
+  - **React Toastify** for user-friendly toast notifications (success, error, info).
 
 ---
 
 ## 🪲 Issues
-
-### 1. MirageJS and Next.js Routing Conflict
-The first issue encountered was during the integration of **Next.js** with **MirageJS**.  
-MirageJS overrides the browser’s native `window.fetch` function, while Next.js’ file-based routing also relies on it internally.  
-This led to conflicts between the two systems.
-
-**Fix:**  
-A temporary solution was implemented — whenever the route changes, the MirageJS server is turned **off** and then turned **back on**.  
-This resolves the fetch conflict but introduces a side effect:  
-> The MirageJS server seeds data multiple times if the user navigates frequently within the app.
+### 1. Attempted Test
+The logic to show that a certain test and its score is still missing.
+This can be implemented by:
+- Implementing backend routes for score calculating 
+- Implementing frontend code for displaying appropiate text
+- Splitting complex states into smaller subcomponents
 
 ---
 
 ### 2. Assessment Builder Performance
-Another issue lies in the **Assessment Builder component**.  
-As users add more questions, the **complex state updates** cause noticeable slowdowns and performance degradation in the browser.  
-This could be optimized in the future using **memoization**, **React batching**, or restructuring the state logic.
+When adding many questions to an assessment, **frequent state updates** can slow down the UI.  
+This can be improved by:
+- Using **React.memo()**
+- Implementing **useCallback** for stable handlers
+- Splitting complex states into smaller subcomponents
 
 ---
 
-### 3. Minor State Management Issues
-There are a few minor inconsistencies in state synchronization between components due to the extensive use of the **Context API**.  
-These are non-breaking but may cause minor UI delays or stale renders in rare cases.
+### 3. Context Sync Delays
+Occasionally, components using shared context re-render later than expected, leading to small UI inconsistencies.  
+This can be fixed by:
+- Structuring state updates with **batching**
+- Avoiding unnecessary deep context nesting
 
 ---
 
 ## ⚙️ Technical Decisions
 
-This section explains the rationale behind the chosen technologies and design patterns.
-
-- **Next.js:**  
-  Chosen because it is a powerful framework built on top of React, offering **file-based routing**, **server-side rendering**, and built-in integration with **TailwindCSS** without needing separate configurations. It simplifies project setup while maintaining scalability.
+- **React.js:**  
+  Chosen for its component-driven architecture, ecosystem maturity, and compatibility with React Router for single-page applications (SPAs).
 
 - **Dexie.js:**  
-  Used for managing **IndexedDB** easily. Instead of manually writing verbose IndexedDB operations, Dexie provides a clean and intuitive API for performing CRUD operations efficiently.
+  Simplifies working with IndexedDB, allowing easy CRUD operations without dealing with complex IndexedDB APIs.
 
 - **TailwindCSS:**  
-  Enables inline, utility-first styling — allowing rapid UI design without constantly switching between CSS files. It makes components concise and easier to maintain.
+  Enables fast and consistent UI development directly within JSX without managing external CSS files.
 
 - **Context API:**  
-  Preferred over **Redux** for simplicity. While Redux is powerful, it can be verbose and overkill for small to mid-sized applications. Context API offers lightweight state management that’s easy to set up and reason about.
+  Chosen over Redux for simplicity — ideal for lightweight apps where full state normalization isn’t needed.
 
 - **Client-Side Filtering & Searching:**  
-  For job listings and candidate data, **client-side searching and filtering** were implemented instead of backend queries.  
-  The idea is simple — data is fetched once, and then React’s **useEffect** hooks handle local filtering, searching, and pagination directly in the browser.
+  For jobs and candidates, all searching and filtering happen on the client after the initial load — improving performance and responsiveness without requiring backend queries.
 
-- **Assessment Component Timer:**  
-  During an assessment, a **timer** runs for a specified duration and automatically **submits** the user’s response when the timer reaches zero.  
-  This feature ensures fair evaluation and enforces time limits without requiring a backend timer system.
+- **Assessment Timer:**  
+  A built-in timer runs during assessments.  
+  When the timer ends, the user’s response auto-submits to ensure fairness.
 
 ---
+---
 
-💡 The app automatically reflects any code changes during development thanks to **Next.js Fast Refresh**.
+## 💡 Notes
+
+- The app uses **Vite** (or CRA) as the React development environment for faster build and refresh.  
+- **Hot Reloading** automatically updates the browser view when you change the code.  
+- MirageJS and Dexie work together to mimic a full-stack workflow entirely in the browser.
