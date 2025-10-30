@@ -1,0 +1,177 @@
+[
+  {
+    "jobTitle": "Data Scientist",
+    "company": "TechNova Analytics",
+    "location": "San Francisco, CA (Hybrid)",
+    "description": "Lead the design, development, and deployment of machine learning models to solve high-impact business problems, focusing on predictive analytics and A/B testing frameworks.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Software Development Engineer",
+    "company": "CloudScale Systems",
+    "location": "Seattle, WA (Remote)",
+    "description": "Design, implement, and maintain scalable, high-performance services in a microservices architecture using modern cloud technologies (AWS/Azure) and languages like TypeScript/Go.",
+    "status": "archived"
+  },
+  {
+    "jobTitle": "UX Designer",
+    "company": "PixelCraft Studios",
+    "location": "New York, NY",
+    "description": "Drive user research, synthesize findings, and translate requirements into wireframes, mockups, and prototypes that deliver intuitive and engaging user experiences across web and mobile platforms.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Product Manager",
+    "company": "NextWave Products",
+    "location": "Remote (US)",
+    "description": "Own the product roadmap, define feature requirements based on market analysis and user feedback, and collaborate closely with engineering and marketing teams to launch successful products.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "DevOps Engineer",
+    "company": "InfraCore Technologies",
+    "location": "Austin, TX",
+    "description": "Build and manage CI/CD pipelines, ensure system reliability and scalability, and implement infrastructure-as-code (IaC) using Terraform and Kubernetes in a fast-paced cloud environment.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Cloud Solutions Architect",
+    "company": "Apex Cloud Services",
+    "location": "Chicago, IL (Hybrid)",
+    "description": "Develop and design secure, highly available, and fault-tolerant solutions on Google Cloud Platform (GCP). Provide technical leadership on cloud adoption strategies and migration projects.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Full Stack Developer (React/Node)",
+    "company": "Innovate Digital",
+    "location": "Boston, MA",
+    "description": "Responsible for end-to-end feature development, spanning responsive frontend UIs using React and scalable backend REST APIs using Node.js and PostgreSQL. Focus on code quality and performance.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Cybersecurity Analyst",
+    "company": "SecureNet Corp",
+    "location": "Washington, D.C.",
+    "description": "Monitor and analyze security alerts, conduct vulnerability assessments, and manage incident response procedures. Implement and maintain security policies (e.g., SOC 2, ISO 27001 compliance).",
+    "status": "archived"
+  },
+  {
+    "jobTitle": "Machine Learning Engineer",
+    "company": "DataMind AI",
+    "location": "Remote (Canada)",
+    "description": "Design and productionize scalable ML models and algorithms. Focus on model serving, MLOps practices, and collaboration with Data Scientists to transition prototypes to production systems.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Technical Project Manager",
+    "company": "Global Tech Ventures",
+    "location": "London, UK",
+    "description": "Oversee large-scale software development projects, managing cross-functional teams, timelines, and budgets. Ensure adherence to Agile methodologies (Scrum/Kanban) and successful delivery.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Frontend Engineer (Vue.js)",
+    "company": "Interface Logic",
+    "location": "Denver, CO",
+    "description": "Build and maintain the core customer-facing application interface using Vue.js and modern state management techniques. Collaborate with UX team on design system implementation.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Mobile Developer (iOS/Swift)",
+    "company": "AppFlow Solutions",
+    "location": "San Jose, CA",
+    "description": "Develop and ship native iOS applications using Swift and SwiftUI. Focus on performance optimization, API integration, and maintaining high standards of mobile UI/UX.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Database Administrator (DBA)",
+    "company": "DataVault Systems",
+    "location": "Dallas, TX",
+    "description": "Manage, optimize, and maintain high-volume SQL and NoSQL database clusters (PostgreSQL, MongoDB). Ensure data security, integrity, and performance through tuning and maintenance.",
+    "status": "archived"
+  },
+  {
+    "jobTitle": "IT Support Specialist (Tier 2)",
+    "company": "Enterprise Services",
+    "location": "Miami, FL (On-Site)",
+    "description": "Provide advanced technical support to internal employees, troubleshooting complex software, hardware, and network issues. Manage ticket resolution and document solutions for the knowledge base.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Backend Engineer (Python/Django)",
+    "company": "Core Logic Inc.",
+    "location": "Remote (Europe)",
+    "description": "Design, develop, and deploy robust backend services and APIs using Python and the Django framework. Work on queueing systems and integrating third-party services.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "QA Automation Engineer",
+    "company": "Quality Assurance Hub",
+    "location": "Raleigh, NC",
+    "description": "Design, build, and maintain automated test suites using Selenium/Cypress for web applications. Integrate testing into the CI/CD pipeline and collaborate with developers on bug reproduction.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Technical Writer",
+    "company": "DocuTech Global",
+    "location": "Remote (North America)",
+    "description": "Create clear, concise, and comprehensive documentation for internal engineering teams and external developers (API documentation, user guides, technical specifications).",
+    "status": "archived"
+  },
+  {
+    "jobTitle": "Solutions Engineer",
+    "company": "Customer Success Tech",
+    "location": "Atlanta, GA",
+    "description": "Bridge the gap between sales and engineering by demonstrating product capabilities to prospective customers and crafting custom technical solutions to meet client needs.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Director of Engineering",
+    "company": "Pinnacle Software",
+    "location": "San Francisco, CA",
+    "description": "Lead and mentor multiple engineering teams, establish technical standards and architectural direction, and manage the long-term technical strategy and execution of the R&D department.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Network Engineer",
+    "company": "ConnectTel Communications",
+    "location": "Phoenix, AZ",
+    "description": "Design, configure, and maintain enterprise-level network infrastructure (LAN, WAN, VPN, Firewalls). Ensure network security, performance, and uptime across all global offices.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Product Owner",
+    "company": "Scrum Masters Inc.",
+    "location": "Toronto, Canada",
+    "description": "Manage the product backlog for a key application team, define user stories, prioritize features based on business value, and act as the voice of the customer to the development team.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Data Engineer",
+    "company": "River Data Co.",
+    "location": "Remote (US)",
+    "description": "Build, optimize, and maintain robust ETL/ELT data pipelines using tools like Apache Airflow and Spark. Ensure data quality and accessibility for downstream analytical and ML teams.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "UI Developer",
+    "company": "Frontier Interfaces",
+    "location": "Los Angeles, CA",
+    "description": "Specialized role focusing purely on implementing highly accurate and accessible user interfaces from design specifications (Figma/Sketch), utilizing advanced CSS and JavaScript.",
+    "status": "archived"
+  },
+  {
+    "jobTitle": "Agile Coach",
+    "company": "Methodology Advisors",
+    "location": "New York, NY (Hybrid)",
+    "description": "Coach and guide multiple teams and leadership on adopting and improving Agile and Scrum practices. Facilitate workshops, ceremonies, and continuous improvement initiatives across the organization.",
+    "status": "active"
+  },
+  {
+    "jobTitle": "Research Scientist (AI)",
+    "company": "Future Labs R&D",
+    "location": "Boston, MA",
+    "description": "Conduct cutting-edge research in large language models (LLMs) and generative AI. Publish papers, develop novel algorithms, and collaborate with product teams on patentable technology.",
+    "status": "active"
+  }
+]

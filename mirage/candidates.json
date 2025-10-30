@@ -1,0 +1,219 @@
+[
+  {
+    "username": "Liam Parker",
+    "stage": "Interview",
+    "email": "liam.parker@techco.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Ethan Mendez",
+    "stage": "Rejected",
+    "email": "ethan.mendez@example.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Noah Williams",
+    "stage": "Offer",
+    "email": "noah.w@corp.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Mia Lopez",
+    "stage": "Interview",
+    "email": "mia.l@outlook.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Daniel Moore",
+    "stage": "Hired",
+    "email": "daniel.m@mail.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Ava Chen",
+    "stage": "Applied",
+    "email": "ava.chen@webmail.org",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Jacob Miller",
+    "stage": "Interview",
+    "email": "jacob.m@devs.io",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Sophia Rodriguez",
+    "stage": "Rejected",
+    "email": "sophia.rod@emailcorp.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Mason King",
+    "stage": "Offer",
+    "email": "mason.king@client.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Isabella Scott",
+    "stage": "Applied",
+    "email": "isabella.s@startup.co",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "William Baker",
+    "stage": "Interview",
+    "email": "w.baker@consult.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Charlotte Hall",
+    "stage": "OA",
+    "email": "charlotte.h@inbox.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Elijah Lewis",
+    "stage": "Hired",
+    "email": "elijah.l@system.org",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Amelia Green",
+    "stage": "Interview",
+    "email": "a.green@mailservice.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "James Adams",
+    "stage": "Rejected",
+    "email": "james.a@globaltech.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Harper Nelson",
+    "stage": "Applied",
+    "email": "harper.n@cloud.co",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Logan Carter",
+    "stage": "Interview",
+    "email": "logan.c@prodev.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Evelyn Perez",
+    "stage": "Offer",
+    "email": "evelyn.p@solutions.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Benjamin White",
+    "stage": "Rejected",
+    "email": "benjamin.w@testco.org",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Abigail Sanchez",
+    "stage": "OA",
+    "email": "abigail.s@innovate.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Henry Clark",
+    "stage": "Applied",
+    "email": "henry.clark@software.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Elizabeth Wright",
+    "stage": "Interview",
+    "email": "elizabeth.w@devcorp.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Alexander Rodriguez",
+    "stage": "Hired",
+    "email": "alex.r@data.io",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Victoria Lopez",
+    "stage": "Rejected",
+    "email": "victoria.l@mailbiz.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Michael Harris",
+    "stage": "Applied",
+    "email": "michael.h@mycompany.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Avery Lewis",
+    "stage": "Interview",
+    "email": "avery.l@global.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Scarlett King",
+    "stage": "Rejected",
+    "email": "scarlett.k@webdev.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Ryan Walker",
+    "stage": "OA",
+    "email": "ryan.w@newhire.co",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Chloe Young",
+    "stage": "Interview",
+    "email": "chloe.y@future.com",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Gabriel Hill",
+    "stage": "Applied",
+    "email": "gabriel.h@techjobs.net",
+    "password": "password123",
+    "isAdmin":false
+  },
+  {
+    "username": "Shrey Dwivedi",
+    "stage": "Applied",
+    "email": "22je0919@iitism.ac.in",
+    "password": "begpd9885m",
+    "isAdmin":true
+  }
+]
