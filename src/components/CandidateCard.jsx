@@ -16,7 +16,7 @@ export default function CandidateCard({ id, username, email, stage }) {
 
   const getStageColor = useCallback((stage) => {
     switch (stage) {
-      case 'Hired': return 'bg-purple-400 text-purple-900'
+      case 'Hired': return 'bg-green-800 text-green-200'
       case 'Interview': return 'bg-indigo-400 text-indigo-900'
       case 'OA': return 'bg-yellow-400 text-yellow-900'
       case 'Applied': return 'bg-yellow-500 text-yellow-900'

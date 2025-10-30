@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { NotepadTextDashed } from "lucide-react";
+import { NotepadTextDashed, CircleX } from "lucide-react";
 import NotesModal from "./NotesModal";
+import { toast } from "react-toastify";
 
 const stages = [
   { name: "Applied", color: "bg-yellow-500" },
   { name: "OA", color: "bg-yellow-800" },
   { name: "Interview", color: "bg-indigo-500" },
   { name: "Offer", color: "bg-purple-600" },
-  { name: "Hired", color: "bg-purple-800" },
+  { name: "Hired", color: "bg-green-800" },
   { name: "Rejected", color: "bg-red-600" },
 ];
 
@@ -96,6 +97,21 @@ export default function User() {
     }
   };
 
+  const deleteNoteHandler = useCallback(async (id) => {
+    try {
+      const res = await fetch(`/api/note/${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!res.ok) {
+        toast.error(data.errors?.[0] || "Problem deleting note");
+        return;
+      }
+      toast.success("Note deleted successfully");
+      setShouldRefetchNotes((prev) => !prev);
+    } catch {
+      toast.error("Something went wrong while deleting note");
+    }
+  }, [setShouldRefetchNotes]);
+
   if (!candidateData)
     return (
       <div className="flex items-center justify-center min-h-screen bg-slate-950 text-gray-400">
@@ -103,8 +119,7 @@ export default function User() {
       </div>
     );
 
-  const currentStageColor =
-    stages.find((s) => s.name === candidateData.stage)?.color || "bg-gray-500";
+  const currentStageColor = stages.find((s) => s.name === candidateData.stage)?.color || "bg-gray-500";
 
   return (
     <>
@@ -147,7 +162,7 @@ export default function User() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-sm text-slate-700">{allNotes.length} notes</span>
-                  <button onClick={() => setIsOpen(true)} className="text-pink-700 px-3 py-1 shadow-md rounded-md bg-pink-100 text-sm hover:bg-pink-200 duration-300 ease-in-out">
+                  <button onClick={() => setIsOpen(true)} className="text-blue-700 px-3 py-1 shadow-md rounded-md bg-blue-100 text-sm hover:bg-blue-200 duration-300 ease-in-out">
                     Add Note
                   </button>
                 </div>
@@ -159,8 +174,9 @@ export default function User() {
                       <div className="flex-shrink-0">
                         <div className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center border border-gray-700 text-xs text-gray-300">{idx + 1}</div>
                       </div>
-                      <div className="flex-1">
+                      <div className="flex-1 flex flex-row justify-between">
                         <p className="text-sm text-slate-900 break-words">{n.note}</p>
+                        <CircleX className="cursor-pointer" onClick={() => deleteNoteHandler(n.id)} />
                       </div>
                     </div>
                   ))

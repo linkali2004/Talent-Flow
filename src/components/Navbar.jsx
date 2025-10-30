@@ -81,7 +81,7 @@ export default function Navbar() {
               localStorage.removeItem("auth");
               handleRedirect();
             }}
-            className="ml-2 px-5 py-2 bg-pink-100 text-pink-700 text-sm font-semibold rounded-lg shadow-sm hover:bg-pink-200 duration-300 ease-in-out"
+            className="ml-2 px-5 py-2 bg-blue-100 text-blue-700 text-sm font-semibold rounded-lg shadow-sm hover:bg-blue-200 duration-300 ease-in-out"
           >
             Logout
           </button>

@@ -121,6 +121,18 @@ class MirageServer {
           return new Response(201, {}, { errors: ["Notes not found"] });
         });
 
+        this.delete("/note/:id", async (schema, request) => {
+          const note = schema.notes.find(request.params.id);
+          if (!note) {
+            return new Response(404, {}, { errors: ["Note not found"] });
+          }
+
+          note.destroy();
+          await db.notes.delete(Number(request.params.id));
+
+          return new Response(200, {}, { success: true, message: "Note deleted successfully" });
+        });
+
         this.post("/addnote", async (schema, request) => {
           const body = JSON.parse(request.requestBody);
           const note = schema.notes.create(body);

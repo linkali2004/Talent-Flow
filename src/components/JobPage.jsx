@@ -58,7 +58,7 @@ export default function JobPage() {
                 <button
                   onClick={(e) => handleClick(e, `/build/${id}`)}
                   type="button"
-                  className="mt-2 text-pink-700 px-4 py-2 rounded-md bg-pink-100 font-semibold hover:bg-pink-200 duration-300 ease-in-out"
+                  className="mt-2 text-blue-700 px-4 py-2 rounded-md bg-blue-100 font-semibold hover:bg-blue-200 duration-300 ease-in-out"
                 >
                   Create Assessment
                 </button>

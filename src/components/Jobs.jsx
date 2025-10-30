@@ -96,7 +96,7 @@ export default function Jobs() {
             <button
               type="button"
               onClick={handleClearFilters}
-              className="text-pink-700 px-4 rounded-md bg-pink-100 font-semibold hover:bg-pink-200 duration-300 ease-in-out"
+              className="text-blue-700 px-4 rounded-md bg-blue-100 font-semibold hover:bg-blue-200 duration-300 ease-in-out"
             >
               Clear Filter
             </button>
@@ -104,7 +104,7 @@ export default function Jobs() {
           {admin && (
             <button
               type="button"
-              className="text-pink-700 px-4 py-2 rounded-md bg-pink-100 font-semibold hover:bg-pink-200 duration-300 ease-in-out"
+              className="text-blue-700 px-4 py-2 rounded-md bg-blue-100 font-semibold hover:bg-blue-200 duration-300 ease-in-out"
               onClick={() => setIsOpen(true)}
             >
               Create Job
@@ -117,14 +117,14 @@ export default function Jobs() {
                 <button
                   onClick={() => setStatus("active")}
                   type='button'
-                  className={`text-pink-700 px-4 py-2 rounded-md ${status === "active" ? "bg-pink-200" : "bg-slate-50"} shadow-md font-semibold transition-bg duration-300 ease-in-out`}
+                  className={`text-blue-700 px-4 py-2 rounded-md ${status === "active" ? "bg-blue-200" : "bg-slate-50"} shadow-md font-semibold transition-bg duration-300 ease-in-out`}
                 >
                   Active
                 </button>
                 <button
                   onClick={() => setStatus("archived")}
                   type='button'
-                  className={`text-pink-700 px-4 py-2 rounded-md ${status === "archived" ? "bg-pink-200" : "bg-slate-50"} shadow-md font-semibold transition-bg duration-300 ease-in-out`}
+                  className={`text-blue-700 px-4 py-2 rounded-md ${status === "archived" ? "bg-blue-200" : "bg-slate-50"} shadow-md font-semibold transition-bg duration-300 ease-in-out`}
                 >
                   Archived
                 </button>
@@ -176,7 +176,7 @@ export default function Jobs() {
                   onClick={() => setPage(idx + 1)}
                   key={idx}
                   type='button'
-                  className={`px-4 py-2 rounded-lg font-semibold transition text-slate-900 ${page === idx + 1 ? 'bg-pink-400 text-white shadow-md' : 'bg-slate-200 hover:bg-slate-400'}`}
+                  className={`px-4 py-2 rounded-lg font-semibold transition text-slate-900 ${page === idx + 1 ? 'bg-blue-400 text-white shadow-md' : 'bg-slate-200 hover:bg-slate-400'}`}
                 >
                   {idx + 1}
                 </button>

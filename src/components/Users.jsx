@@ -84,7 +84,7 @@ export default function Users() {
         <button
           type="button"
           onClick={handleClearFilters}
-          className="text-pink-700 px-4 rounded-md bg-pink-100 font-semibold hover:bg-pink-200 duration-300 ease-in-out"
+          className="text-blue-700 px-4 rounded-md bg-blue-100 font-semibold hover:bg-blue-200 duration-300 ease-in-out"
         >
           Clear Filter
         </button>
@@ -118,7 +118,7 @@ export default function Users() {
               type="button"
               className={`px-4 py-2 rounded-lg font-semibold transition text-slate-900 ${
                 page === idx + 1
-                  ? 'bg-pink-400 text-white shadow-md'
+                  ? 'bg-blue-400 text-white shadow-md'
                   : 'bg-slate-200 hover:bg-slate-400'
               }`}
             >
