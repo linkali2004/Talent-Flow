@@ -35,6 +35,9 @@ Once the server is running, open your browser and navigate to:
 👉 [http://localhost:5173](http://localhost:5173)
 
 ---
+## Admin Login Credentials
+-- Username: Shrey Dwivedi
+-- Password: begpd9885m
 
 ## 🧱 Architecture
 
