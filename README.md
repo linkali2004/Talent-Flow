@@ -36,8 +36,8 @@ Once the server is running, open your browser and navigate to:
 
 ---
 ## Admin Login Credentials
--- Username: Shrey Dwivedi
--- Password: begpd9885m
+- **Username:**  : Shrey Dwivedi
+- **Password**  : begpd9885m
 
 ## 🧱 Architecture
 
