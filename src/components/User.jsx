@@ -230,7 +230,7 @@ export default function User() {
             <p className="text-md text-slate-700 text-center my-6">Candidate has yet to attempt assessments</p>
           ) : (
             doneAssessments.map((ele, index) => (
-              <div key={index} className="flex flex-row items-center justify-between p-4 mb-2 bg-slate-700 border border-gray-800 rounded-xl shadow-lg mt w-full">
+              <div key={index} className="flex flex-row items-center justify-between p-4 mb-2 bg-slate-200 border border-gray-800 rounded-xl shadow-lg mt w-full">
                 <p>Assessment - {index + 1}</p>
                 <button type="button" className="text-gray-700 px-4 py-2 rounded-md bg-green-100 font-semibold hover:bg-green-200 duration-300 ease-in-out" onClick={(e) => handleClick(e, `/test/${ele}`)}>
                   View
